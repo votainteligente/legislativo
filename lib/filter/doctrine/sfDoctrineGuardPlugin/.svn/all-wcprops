@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vota/!svn/ver/22/lib/filter/doctrine/sfDoctrineGuardPlugin
+END
+sfGuardPermissionFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/vota/!svn/ver/22/lib/filter/doctrine/sfDoctrineGuardPlugin/sfGuardPermissionFormFilter.class.php
+END
+sfGuardGroupFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/vota/!svn/ver/22/lib/filter/doctrine/sfDoctrineGuardPlugin/sfGuardGroupFormFilter.class.php
+END
+sfGuardUserFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/vota/!svn/ver/22/lib/filter/doctrine/sfDoctrineGuardPlugin/sfGuardUserFormFilter.class.php
+END

@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/vota/!svn/ver/3/lib/form/doctrine/base
+END
+BaseProyectoLeyForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vota/!svn/ver/22/lib/form/doctrine/base/BaseProyectoLeyForm.class.php
+END
+BaseProyectoLeyRefundidoForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vota/!svn/ver/22/lib/form/doctrine/base/BaseProyectoLeyRefundidoForm.class.php
+END
+BaseComisionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vota/!svn/ver/29/lib/form/doctrine/base/BaseComisionForm.class.php
+END
+BaseProyectoLeyEnSesionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vota/!svn/ver/22/lib/form/doctrine/base/BaseProyectoLeyEnSesionForm.class.php
+END
+BaseComunaForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vota/!svn/ver/9/lib/form/doctrine/base/BaseComunaForm.class.php
+END
+BaseMateriaForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vota/!svn/ver/12/lib/form/doctrine/base/BaseMateriaForm.class.php
+END
+BaseVotacionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vota/!svn/ver/29/lib/form/doctrine/base/BaseVotacionForm.class.php
+END
+BaseVotacionComisionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/vota/!svn/ver/32/lib/form/doctrine/base/BaseVotacionComisionForm.class.php
+END
+BaseRegionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vota/!svn/ver/10/lib/form/doctrine/base/BaseRegionForm.class.php
+END
+BaseDebateForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vota/!svn/ver/32/lib/form/doctrine/base/BaseDebateForm.class.php
+END
+BaseDebateComisionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vota/!svn/ver/22/lib/form/doctrine/base/BaseDebateComisionForm.class.php
+END
+BaseAutorProyectoLeyForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/vota/!svn/ver/9/lib/form/doctrine/base/BaseAutorProyectoLeyForm.class.php
+END
+BaseAutorForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vota/!svn/ver/20/lib/form/doctrine/base/BaseAutorForm.class.php
+END
+BaseCircunscripcionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vota/!svn/ver/9/lib/form/doctrine/base/BaseCircunscripcionForm.class.php
+END
+BaseParlamentarioForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vota/!svn/ver/29/lib/form/doctrine/base/BaseParlamentarioForm.class.php
+END
+BaseSesionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vota/!svn/ver/24/lib/form/doctrine/base/BaseSesionForm.class.php
+END
+BaseDistritoForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vota/!svn/ver/10/lib/form/doctrine/base/BaseDistritoForm.class.php
+END
+BaseVotacionParlamentarioForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vota/!svn/ver/25/lib/form/doctrine/base/BaseVotacionParlamentarioForm.class.php
+END
+BasePartidoForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vota/!svn/ver/10/lib/form/doctrine/base/BasePartidoForm.class.php
+END
+BaseProyectoLeyEnComisionForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vota/!svn/ver/9/lib/form/doctrine/base/BaseProyectoLeyEnComisionForm.class.php
+END
+BaseVotacionComisionParlamentarioForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/vota/!svn/ver/32/lib/form/doctrine/base/BaseVotacionComisionParlamentarioForm.class.php
+END

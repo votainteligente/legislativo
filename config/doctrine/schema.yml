@@ -1,0 +1,2069 @@
+Autor:
+  connection: doctrine
+  tableName: Autor
+  columns:
+    id_autor:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    apellidos:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    cargo:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    periodos:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_parlamentario:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Parlamentario:
+      local: id_parlamentario
+      foreign: id_parlamentario
+      type: one
+    AutorProyectoLey:
+      local: id_autor
+      foreign: id_autor
+      type: many
+AutorProyectoLey:
+  connection: doctrine
+  tableName: AutorProyectoLey
+  columns:
+    id_autor:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    id_proyecto_ley:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    Autor:
+      local: id_autor
+      foreign: id_autor
+      type: one
+    ProyectoLey:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: one
+Circunscripcion:
+  connection: doctrine
+  tableName: Circunscripcion
+  columns:
+    id_circunscripcion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    nombre:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Distrito:
+      local: id_circunscripcion
+      foreign: id_circunscripcion
+      type: many
+    Parlamentario:
+      local: id_circunscripcion
+      foreign: id_circunscripcion
+      type: many
+Comision:
+  connection: doctrine
+  tableName: Comision
+  columns:
+    id_comision:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    tipo:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    camara:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    contacto_mail:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    contacto_tel:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    contacto_form:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    abogado_secretario:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    abogado_ayudante:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    secretario_ejecutivo:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    DebateComision:
+      local: id_comision
+      foreign: id_comision
+      type: many
+    ParlamentarioEnComision:
+      local: id_comision
+      foreign: id_comision
+      type: many
+    ProyectoLeyEnComision:
+      local: id_comision
+      foreign: id_comision
+      type: many
+    VotacionComision:
+      local: id_comision
+      foreign: id_comision
+      type: many
+Comuna:
+  connection: doctrine
+  tableName: Comuna
+  columns:
+    id_comuna:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    id_distrito:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Distrito:
+      local: id_distrito
+      foreign: id_distrito
+      type: one
+Debate:
+  connection: doctrine
+  tableName: Debate
+  columns:
+    id_debate:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    id_proyecto_ley:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    comision_sala:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    comisiones_unidas:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    camara:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fecha:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    hora:
+      type: time(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '12:00:00'
+      notnull: true
+      autoincrement: false
+    discusion:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tema:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    debate:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tags:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    docs:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    destacado_titulo:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    destacado_texto:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    ProyectoLey:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: one
+    DebateComision:
+      local: id_debate
+      foreign: id_debate
+      type: many
+    VotacionComision:
+      local: id_debate
+      foreign: id_debate
+      type: many
+DebateComision:
+  connection: doctrine
+  tableName: DebateComision
+  columns:
+    id_debate:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    id_comision:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    Debate:
+      local: id_debate
+      foreign: id_debate
+      type: one
+    Comision:
+      local: id_comision
+      foreign: id_comision
+      type: one
+Distrito:
+  connection: doctrine
+  tableName: Distrito
+  columns:
+    id_distrito:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    id_circunscripcion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    id_region:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Circunscripcion:
+      local: id_circunscripcion
+      foreign: id_circunscripcion
+      type: one
+    Region:
+      local: id_region
+      foreign: id_region
+      type: one
+    Comuna:
+      local: id_distrito
+      foreign: id_distrito
+      type: many
+    Parlamentario:
+      local: id_distrito
+      foreign: id_distrito
+      type: many
+Materia:
+  connection: doctrine
+  tableName: Materia
+  columns:
+    id_materia:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    nombre:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    super_materia:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    ProyectoLey:
+      local: id_materia
+      foreign: id_materia
+      type: many
+Parlamentario:
+  connection: doctrine
+  tableName: Parlamentario
+  columns:
+    id_parlamentario:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    apellidos:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    senador_diputado:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    id_circunscripcion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_distrito:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    pacto:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_partido:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    sexo:
+      type: string(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_nacimiento:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    profesion:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    mesa_directiva:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    periodos_senador:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    periodos_diputado:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    periodos_senador_desc:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    periodos_diputado_desc:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    primera_vez:
+      type: string(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    comisiones_anteriores:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    comisiones_actuales:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    voto_nro:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    voto_porcentaje:
+      type: float(18)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    gasto_electoral2005:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    financiamiento_electoral2005:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    gasto_electoral2009:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    financiamiento_electoral2009:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    comite_parlamentario:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    mail:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    web:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    twitter:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    facebook:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    dietas:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    declaracion_interes:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    declaracion_patrimonio:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    educacion_universitaria:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    educacion_postgrado:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    cargos_gobierno:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    cargos_eleccion:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    experiencia_politica:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    experiencia_laboral:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_parlamento:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    activo:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Distrito:
+      local: id_distrito
+      foreign: id_distrito
+      type: one
+    Partido:
+      local: id_partido
+      foreign: id_partido
+      type: one
+    Circunscripcion:
+      local: id_circunscripcion
+      foreign: id_circunscripcion
+      type: one
+    Autor:
+      local: id_parlamentario
+      foreign: id_parlamentario
+      type: many
+    ParlamentarioEnComision:
+      local: id_parlamentario
+      foreign: id_parlamentario
+      type: many
+    VotacionComisionParlamentario:
+      local: id_parlamentario
+      foreign: id_parlamentario
+      type: many
+    VotacionParlamentario:
+      local: id_parlamentario
+      foreign: id_parlamentario
+      type: many
+ParlamentarioEnComision:
+  connection: doctrine
+  tableName: ParlamentarioEnComision
+  columns:
+    id_parlamentario:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    id_comision:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    cargo:
+      type: string(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Parlamentario:
+      local: id_parlamentario
+      foreign: id_parlamentario
+      type: one
+    Comision:
+      local: id_comision
+      foreign: id_comision
+      type: one
+Partido:
+  connection: doctrine
+  tableName: Partido
+  columns:
+    id_partido:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    sigla:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_nacimiento:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    mesa_adulta:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    mesa_juventud:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nro_diputados_2010:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nro_senadores_2010:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    direccion:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    telefono:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    mail:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    web:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    historia:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    principios:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Parlamentario:
+      local: id_partido
+      foreign: id_partido
+      type: many
+ProyectoLey:
+  connection: doctrine
+  tableName: ProyectoLey
+  columns:
+    id_proyecto_ley:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nro_boletin:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    titulo:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    titulo_sesion:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fecha_ingreso:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    iniciativa:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    tipo:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    camara_origen:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    urgencia:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    etapa:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    sub_etapa:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ley:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ley_bcn:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    decreto:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    decreto_bcn:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fecha_publicacion:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_materia:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nro_interno:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    avance:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nro_tramitacion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tramitacion_act:
+      type: string(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    resumen:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Materia:
+      local: id_materia
+      foreign: id_materia
+      type: one
+    AutorProyectoLey:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: many
+    Debate:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: many
+    ProyectoLeyEnComision:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: many
+    ProyectoLeyEnSesion:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: many
+    ProyectoLeyRefundido:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: many
+    ProyectoLeyRefundido_2:
+      class: ProyectoLeyRefundido
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley2
+      type: many
+    VotacionComision:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: many
+ProyectoLeyEnComision:
+  connection: doctrine
+  tableName: ProyectoLeyEnComision
+  columns:
+    id_proyecto_ley:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    id_comision:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    ProyectoLey:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: one
+    Comision:
+      local: id_comision
+      foreign: id_comision
+      type: one
+ProyectoLeyEnSesion:
+  connection: doctrine
+  tableName: ProyectoLeyEnSesion
+  columns:
+    id_sesion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    id_proyecto_ley:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    Sesion:
+      local: id_sesion
+      foreign: id_sesion
+      type: one
+    ProyectoLey:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: one
+ProyectoLeyRefundido:
+  connection: doctrine
+  tableName: ProyectoLeyRefundido
+  columns:
+    id_proyecto_ley:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    id_proyecto_ley2:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    ProyectoLey:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: one
+    ProyectoLey_2:
+      class: ProyectoLey
+      local: id_proyecto_ley2
+      foreign: id_proyecto_ley
+      type: one
+Region:
+  connection: doctrine
+  tableName: Region
+  columns:
+    id_region:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    sigla:
+      type: string(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nombre:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Distrito:
+      local: id_region
+      foreign: id_region
+      type: many
+Sesion:
+  connection: doctrine
+  tableName: Sesion
+  columns:
+    id_sesion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    fecha:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    camara:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    nro:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    ProyectoLeyEnSesion:
+      local: id_sesion
+      foreign: id_sesion
+      type: many
+SfGuardGroup:
+  connection: doctrine
+  tableName: sf_guard_group
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardGroupPermission:
+      local: id
+      foreign: group_id
+      type: many
+    SfGuardUserGroup:
+      local: id
+      foreign: group_id
+      type: many
+SfGuardGroupPermission:
+  connection: doctrine
+  tableName: sf_guard_group_permission
+  columns:
+    group_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    permission_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardGroup:
+      local: group_id
+      foreign: id
+      type: one
+    SfGuardPermission:
+      local: permission_id
+      foreign: id
+      type: one
+SfGuardPermission:
+  connection: doctrine
+  tableName: sf_guard_permission
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardGroupPermission:
+      local: id
+      foreign: permission_id
+      type: many
+    SfGuardUserPermission:
+      local: id
+      foreign: permission_id
+      type: many
+SfGuardRememberKey:
+  connection: doctrine
+  tableName: sf_guard_remember_key
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    remember_key:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ip_address:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+SfGuardUser:
+  connection: doctrine
+  tableName: sf_guard_user
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    username:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    algorithm:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: sha1
+      notnull: true
+      autoincrement: false
+    salt:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    password:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    is_active:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: false
+      autoincrement: false
+    is_super_admin:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    last_login:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardRememberKey:
+      local: id
+      foreign: user_id
+      type: many
+    SfGuardUserGroup:
+      local: id
+      foreign: user_id
+      type: many
+    SfGuardUserPermission:
+      local: id
+      foreign: user_id
+      type: many
+SfGuardUserGroup:
+  connection: doctrine
+  tableName: sf_guard_user_group
+  columns:
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    group_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardGroup:
+      local: group_id
+      foreign: id
+      type: one
+    SfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+SfGuardUserPermission:
+  connection: doctrine
+  tableName: sf_guard_user_permission
+  columns:
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    permission_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardPermission:
+      local: permission_id
+      foreign: id
+      type: one
+    SfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+Votacion:
+  connection: doctrine
+  tableName: Votacion
+  columns:
+    id_votacion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    camara:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    en_sala:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    tipo:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    articulo:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    materia:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fecha:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    hora:
+      type: time(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    voto_si:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    voto_no:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    voto_abs:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    voto_disp:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    voto_pareos:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    voto_aus:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    resultado:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    quorum:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_proyecto_ley:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_sesion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_parlamento:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    visible:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    VotacionParlamentario:
+      local: id_votacion
+      foreign: id_votacion
+      type: many
+VotacionComision:
+  connection: doctrine
+  tableName: VotacionComision
+  columns:
+    id_votacion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    id_comision:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    camara:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tipo:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    articulo:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    voto_si:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    voto_no:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    voto_abs:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    voto_disp:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    voto_pareos:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    voto_aus:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    resultado:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    quorum:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    comentario:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_proyecto_ley:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_debate:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Comision:
+      local: id_comision
+      foreign: id_comision
+      type: one
+    Debate:
+      local: id_debate
+      foreign: id_debate
+      type: one
+    ProyectoLey:
+      local: id_proyecto_ley
+      foreign: id_proyecto_ley
+      type: one
+    VotacionComisionParlamentario:
+      local: id_votacion
+      foreign: id_votacion
+      type: many
+VotacionComisionParlamentario:
+  connection: doctrine
+  tableName: VotacionComisionParlamentario
+  columns:
+    id_votacion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    id_parlamentario:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    voto:
+      type: string(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    VotacionComision:
+      local: id_votacion
+      foreign: id_votacion
+      type: one
+    Parlamentario:
+      local: id_parlamentario
+      foreign: id_parlamentario
+      type: one
+VotacionParlamentario:
+  connection: doctrine
+  tableName: VotacionParlamentario
+  columns:
+    id_votacion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    id_parlamentario:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    voto:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Votacion:
+      local: id_votacion
+      foreign: id_votacion
+      type: one
+    Parlamentario:
+      local: id_parlamentario
+      foreign: id_parlamentario
+      type: one

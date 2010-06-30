@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin
+END
+sfGuardUserGroup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardUserGroup.class.php
+END
+sfGuardGroup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardGroup.class.php
+END
+sfGuardGroupPermissionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardGroupPermissionTable.class.php
+END
+sfGuardUser.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardUser.class.php
+END
+sfGuardRememberKeyTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardRememberKeyTable.class.php
+END
+sfGuardUserPermissionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardUserPermissionTable.class.php
+END
+sfGuardPermissionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardPermissionTable.class.php
+END
+sfGuardUserGroupTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardUserGroupTable.class.php
+END
+sfGuardGroupTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardGroupTable.class.php
+END
+sfGuardGroupPermission.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardGroupPermission.class.php
+END
+sfGuardUserTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardUserTable.class.php
+END
+sfGuardRememberKey.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardRememberKey.class.php
+END
+sfGuardUserPermission.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardUserPermission.class.php
+END
+sfGuardPermission.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardPermission.class.php
+END

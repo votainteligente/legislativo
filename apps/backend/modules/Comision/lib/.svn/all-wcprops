@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vota/!svn/ver/17/apps/backend/modules/Comision/lib
+END
+ComisionGeneratorHelper.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vota/!svn/ver/17/apps/backend/modules/Comision/lib/ComisionGeneratorHelper.class.php
+END
+ComisionGeneratorConfiguration.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/vota/!svn/ver/17/apps/backend/modules/Comision/lib/ComisionGeneratorConfiguration.class.php
+END

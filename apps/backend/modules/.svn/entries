@@ -1,0 +1,58 @@
+10
+
+dir
+12
+http://localhost/svn/vota/apps/backend/modules
+http://localhost/svn/vota
+
+
+
+2010-03-10T15:12:24.832685Z
+12
+geraldo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+99947f66-c9a6-4cd9-8b81-7025fc7c8d75
+
+Comision
+dir
+
+Sesion
+dir
+
+Materia
+dir
+
+Partido
+dir
+
+Votacion
+dir
+
+VotacionComision
+dir
+
+Debate
+dir
+
+Autor
+dir
+
+ProyectoLey
+dir
+
+Parlamentario
+dir
+

@@ -1,0 +1,179 @@
+# data/fixtures/comision.yml
+Comision:
+  1:
+    camara: C.Diputados
+    tipo:   permanente
+    nombre: Gobierno Interior y Regionalización
+  2:
+    nombre: Relaciones Exteriores, Asuntos Interparlamentarios e Integración Latinoamericana
+    tipo:   permanente
+    camara: C.Diputados
+  3:
+    nombre: Constitución, Legislación y Justicia
+    tipo:   permanente
+    camara: C.Diputados
+  4:
+    nombre: Educación, Deportes y Recreación
+    tipo:   permanente
+    camara: C.Diputados
+  5:
+    nombre: Hacienda
+    tipo:   permanente
+    camara: C.Diputados
+  6:
+    nombre: Defensa Nacional
+    tipo:   permanente
+    camara: C.Diputados
+  7:
+    nombre: Obras Públicas, Transportes y Telecomunicaciones
+    tipo:   permanente
+    camara: C.Diputados
+  8:
+    nombre: Agricultura, Silvicultura y Desarrollo Rural
+    tipo:   permanente
+    camara: C.Diputados
+  9:
+    nombre: Recursos Naturales, Bienes Nacionales y Medio Ambiente
+    tipo:   permanente
+    camara: C.Diputados
+  10:
+    nombre: Salud
+    tipo:   permanente
+    camara: C.Diputados
+  11:
+    nombre: Trabajo y Seguridad Social
+    tipo:   permanente
+    camara: C.Diputados
+  12:
+    nombre: Minería y Energía
+    tipo:   permanente
+    camara: C.Diputados
+  13:
+    nombre: Economía, Fomento y Desarrollo
+    tipo:   permanente
+    camara: C.Diputados
+  14:
+    nombre: Vivienda y Desarrollo Urbano
+    tipo:   permanente
+    camara: C.Diputados
+  15:
+    nombre: Derechos Humanos, Nacionalidad y Ciudadanía
+    tipo:   permanente
+    camara: C.Diputados
+  16:
+    nombre: Familia
+    tipo:   permanente
+    camara: C.Diputados
+  17:
+    nombre: Ciencia y Tecnología
+    tipo:   permanente
+    camara: C.Diputados
+  18:
+    nombre: Pesca, Acuicultura e Intereses Marítimos
+    tipo:   permanente
+    camara: C.Diputados
+  19:
+    nombre: Micro, Pequeña y Mediana Empresa
+    tipo:   permanente
+    camara: C.Diputados
+  20:
+    nombre: Zonas Extremas
+    tipo:   permanente
+    camara: C.Diputados
+  21:
+    nombre: Seguridad Ciudadana y Drogas
+    tipo:   permanente
+    camara: C.Diputados
+  22:
+    nombre: Cultura y de las Artes
+    tipo:   permanente
+    camara: C.Diputados
+  23:
+    nombre: Superación de la Pobreza, Planificación y Desarrollo Social
+    tipo:   permanente
+    camara: C.Diputados
+  24:
+    nombre: Conducta Parlamentaria
+    tipo:   permanente
+    camara: C.Diputados
+  25:
+    nombre: de Gobierno, Descentralización y Regionalización
+    tipo:   permanente
+    camara: Senado
+  26:
+    nombre: de Relaciones Exteriores
+    tipo:   permanente
+    camara: Senado
+  27:
+    nombre: de Constitución, Legislación, Justicia y Reglamento
+    tipo:   permanente
+    camara: Senado
+  28:
+    nombre: de Economía
+    tipo:   permanente
+    camara: Senado
+  29:
+    nombre: de Hacienda
+    tipo:   permanente
+    camara: Senado
+  30:
+    nombre: de Educación, Cultura, Ciencia y Tecnología
+    tipo:   permanente
+    camara: Senado
+  31:
+    nombre: de Defensa Nacional
+    tipo:   permanente
+    camara: Senado
+  32:
+    nombre: de Obras Públicas
+    tipo:   permanente
+    camara: Senado
+  33:
+    nombre: de Agricultura
+    tipo:   permanente
+    camara: Senado
+  34:
+    nombre: de Medio Ambiente y Bienes Nacionales
+    tipo:   permanente
+    camara: Senado
+  35:
+    nombre: de Trabajo y Previsión Social
+    tipo:   permanente
+    camara: Senado
+  36:
+    nombre: de Salud
+    tipo:   permanente
+    camara: Senado
+  37:
+    nombre: de Minería y Energía
+    tipo:   permanente
+    camara: Senado
+  38:
+    nombre: de Vivienda y Urbanismo
+    tipo:   permanente
+    camara: Senado
+  39:
+    nombre: de Transportes y Telecomunicaciones
+    tipo:   permanente
+    camara: Senado
+  40:
+    nombre: de Derechos Humanos, Nacionalidad y Ciudadanía
+    tipo:   permanente
+    camara: Senado
+  41:
+    nombre: de Intereses Marítimos, Pesca y Acuicultura
+    tipo:   permanente
+    camara: Senado
+  42:
+    nombre: de Regimen Interior
+    tipo:   permanente
+    camara: Senado
+  43:
+    nombre: Revisora de Cuentas
+    tipo:   permanente
+    camara: Senado
+  44:
+    nombre: de Ética y Transparencia del Senado
+    tipo:   permanente
+    camara: Senado
+

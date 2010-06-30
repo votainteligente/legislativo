@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vota/!svn/ver/25/apps/backend/modules/Votacion/lib
+END
+VotacionGeneratorHelper.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vota/!svn/ver/25/apps/backend/modules/Votacion/lib/VotacionGeneratorHelper.class.php
+END
+VotacionGeneratorConfiguration.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/vota/!svn/ver/25/apps/backend/modules/Votacion/lib/VotacionGeneratorConfiguration.class.php
+END

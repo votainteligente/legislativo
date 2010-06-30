@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/base
+END
+BasesfGuardUser.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardUser.class.php
+END
+BasesfGuardGroupPermission.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardGroupPermission.class.php
+END
+BasesfGuardRememberKey.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardRememberKey.class.php
+END
+BasesfGuardUserPermission.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardUserPermission.class.php
+END
+BasesfGuardPermission.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardPermission.class.php
+END
+BasesfGuardUserGroup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardUserGroup.class.php
+END
+BasesfGuardGroup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/vota/!svn/ver/22/lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardGroup.class.php
+END

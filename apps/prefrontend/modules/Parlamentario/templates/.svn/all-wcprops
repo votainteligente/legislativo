@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vota/!svn/ver/10/apps/frontend/modules/Parlamentario/templates
+END
+showSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vota/!svn/ver/33/apps/frontend/modules/Parlamentario/templates/showSuccess.php
+END
+_votaciones.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vota/!svn/ver/33/apps/frontend/modules/Parlamentario/templates/_votaciones.php
+END
+_votaciones_comision.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/vota/!svn/ver/33/apps/frontend/modules/Parlamentario/templates/_votaciones_comision.php
+END
+_news.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vota/!svn/ver/15/apps/frontend/modules/Parlamentario/templates/_news.php
+END
+_mociones.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/vota/!svn/ver/29/apps/frontend/modules/Parlamentario/templates/_mociones.php
+END
+editSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vota/!svn/ver/10/apps/frontend/modules/Parlamentario/templates/editSuccess.php
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vota/!svn/ver/32/apps/frontend/modules/Parlamentario/templates/indexSuccess.php
+END
+_twitter.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/vota/!svn/ver/15/apps/frontend/modules/Parlamentario/templates/_twitter.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vota/!svn/ver/10/apps/frontend/modules/Parlamentario/templates/_form.php
+END
+newSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vota/!svn/ver/10/apps/frontend/modules/Parlamentario/templates/newSuccess.php
+END
+votacionesSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vota/!svn/ver/33/apps/frontend/modules/Parlamentario/templates/votacionesSuccess.php
+END
+listSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vota/!svn/ver/15/apps/frontend/modules/Parlamentario/templates/listSuccess.php
+END

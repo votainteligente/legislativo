@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/vota/!svn/ver/3/lib/model/doctrine
+END
+ProyectoLeyTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vota/!svn/ver/19/lib/model/doctrine/ProyectoLeyTable.class.php
+END
+ProyectoLeyRefundidoTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vota/!svn/ver/22/lib/model/doctrine/ProyectoLeyRefundidoTable.class.php
+END
+ComisionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vota/!svn/ver/18/lib/model/doctrine/ComisionTable.class.php
+END
+AutorProyectoLey.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vota/!svn/ver/3/lib/model/doctrine/AutorProyectoLey.class.php
+END
+VotacionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vota/!svn/ver/27/lib/model/doctrine/VotacionTable.class.php
+END
+RegionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vota/!svn/ver/9/lib/model/doctrine/RegionTable.class.php
+END
+DebateTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vota/!svn/ver/27/lib/model/doctrine/DebateTable.class.php
+END
+Circunscripcion.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vota/!svn/ver/10/lib/model/doctrine/Circunscripcion.class.php
+END
+Distrito.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vota/!svn/ver/10/lib/model/doctrine/Distrito.class.php
+END
+AutorProyectoLeyTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vota/!svn/ver/3/lib/model/doctrine/AutorProyectoLeyTable.class.php
+END
+VotacionParlamentario.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vota/!svn/ver/30/lib/model/doctrine/VotacionParlamentario.class.php
+END
+Partido.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vota/!svn/ver/21/lib/model/doctrine/Partido.class.php
+END
+AutorTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vota/!svn/ver/20/lib/model/doctrine/AutorTable.class.php
+END
+CircunscripcionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vota/!svn/ver/9/lib/model/doctrine/CircunscripcionTable.class.php
+END
+ParlamentarioTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vota/!svn/ver/29/lib/model/doctrine/ParlamentarioTable.class.php
+END
+SesionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vota/!svn/ver/22/lib/model/doctrine/SesionTable.class.php
+END
+VotacionParlamentarioTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vota/!svn/ver/25/lib/model/doctrine/VotacionParlamentarioTable.class.php
+END
+DistritoTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vota/!svn/ver/9/lib/model/doctrine/DistritoTable.class.php
+END
+ProyectoLeyEnComisionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vota/!svn/ver/8/lib/model/doctrine/ProyectoLeyEnComisionTable.class.php
+END
+VotacionComisionParlamentarioTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vota/!svn/ver/29/lib/model/doctrine/VotacionComisionParlamentarioTable.class.php
+END
+ProyectoLeyRefundido.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vota/!svn/ver/22/lib/model/doctrine/ProyectoLeyRefundido.class.php
+END
+ProyectoLey.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vota/!svn/ver/32/lib/model/doctrine/ProyectoLey.class.php
+END
+Comision.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vota/!svn/ver/29/lib/model/doctrine/Comision.class.php
+END
+Votacion.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vota/!svn/ver/32/lib/model/doctrine/Votacion.class.php
+END
+VotacionComision.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vota/!svn/ver/30/lib/model/doctrine/VotacionComision.class.php
+END
+Debate.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vota/!svn/ver/32/lib/model/doctrine/Debate.class.php
+END
+DebateComision.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vota/!svn/ver/19/lib/model/doctrine/DebateComision.class.php
+END
+ProyectoLeyEnSesionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/vota/!svn/ver/22/lib/model/doctrine/ProyectoLeyEnSesionTable.class.php
+END
+ComunaTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vota/!svn/ver/9/lib/model/doctrine/ComunaTable.class.php
+END
+MateriaTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vota/!svn/ver/3/lib/model/doctrine/MateriaTable.class.php
+END
+Autor.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vota/!svn/ver/20/lib/model/doctrine/Autor.class.php
+END
+ParlamentarioEnComisionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/vota/!svn/ver/28/lib/model/doctrine/ParlamentarioEnComisionTable.class.php
+END
+VotacionComisionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vota/!svn/ver/28/lib/model/doctrine/VotacionComisionTable.class.php
+END
+DebateComisionTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vota/!svn/ver/19/lib/model/doctrine/DebateComisionTable.class.php
+END
+Parlamentario.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vota/!svn/ver/31/lib/model/doctrine/Parlamentario.class.php
+END
+Sesion.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vota/!svn/ver/32/lib/model/doctrine/Sesion.class.php
+END
+ProyectoLeyEnComision.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vota/!svn/ver/8/lib/model/doctrine/ProyectoLeyEnComision.class.php
+END
+VotacionComisionParlamentario.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/vota/!svn/ver/30/lib/model/doctrine/VotacionComisionParlamentario.class.php
+END
+PartidoTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vota/!svn/ver/10/lib/model/doctrine/PartidoTable.class.php
+END
+ProyectoLeyEnSesion.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vota/!svn/ver/22/lib/model/doctrine/ProyectoLeyEnSesion.class.php
+END
+Comuna.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vota/!svn/ver/10/lib/model/doctrine/Comuna.class.php
+END
+Materia.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vota/!svn/ver/19/lib/model/doctrine/Materia.class.php
+END
+ParlamentarioEnComision.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vota/!svn/ver/28/lib/model/doctrine/ParlamentarioEnComision.class.php
+END
+Region.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vota/!svn/ver/10/lib/model/doctrine/Region.class.php
+END

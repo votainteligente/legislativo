@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/vota/!svn/ver/3/data/fixtures
+END
+100_comision.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vota/!svn/ver/18/data/fixtures/100_comision.yml
+END
+080_autor.yml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vota/!svn/ver/12/data/fixtures/080_autor.yml
+END
+010_materia.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vota/!svn/ver/12/data/fixtures/010_materia.yml
+END
+030_distrito.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vota/!svn/ver/10/data/fixtures/030_distrito.yml
+END
+070_parlamentario.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vota/!svn/ver/15/data/fixtures/070_parlamentario.yml
+END
+040_comuna.yml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vota/!svn/ver/9/data/fixtures/040_comuna.yml
+END
+050_region.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vota/!svn/ver/10/data/fixtures/050_region.yml
+END
+060_partido.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vota/!svn/ver/10/data/fixtures/060_partido.yml
+END
+fixtures.yml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/vota/!svn/ver/3/data/fixtures/fixtures.yml
+END
+090_users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vota/!svn/ver/14/data/fixtures/090_users.yml
+END
+020_circunscripcion.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vota/!svn/ver/9/data/fixtures/020_circunscripcion.yml
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vota/!svn/ver/10/apps/frontend/modules/Partido/templates
+END
+showSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vota/!svn/ver/32/apps/frontend/modules/Partido/templates/showSuccess.php
+END
+_mociones.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/vota/!svn/ver/21/apps/frontend/modules/Partido/templates/_mociones.php
+END
+editSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vota/!svn/ver/10/apps/frontend/modules/Partido/templates/editSuccess.php
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/vota/!svn/ver/32/apps/frontend/modules/Partido/templates/indexSuccess.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vota/!svn/ver/10/apps/frontend/modules/Partido/templates/_form.php
+END
+newSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vota/!svn/ver/10/apps/frontend/modules/Partido/templates/newSuccess.php
+END

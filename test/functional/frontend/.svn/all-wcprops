@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/vota/!svn/ver/3/test/functional/frontend
+END
+votaActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vota/!svn/ver/3/test/functional/frontend/votaActionsTest.php
+END
+ProyectoLeyActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vota/!svn/ver/3/test/functional/frontend/ProyectoLeyActionsTest.php
+END
+MateriaActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vota/!svn/ver/3/test/functional/frontend/MateriaActionsTest.php
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/svn/vota/!svn/ver/3/web
+END
+sfDoctrinePlugin
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/vota/!svn/ver/12/web/sfDoctrinePlugin
+END
+sfFormExtraPlugin
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/vota/!svn/ver/24/web/sfFormExtraPlugin
+END
+frontend_dev.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/vota/!svn/ver/15/web/frontend_dev.php
+END
+robots.txt
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/vota/!svn/ver/3/web/robots.txt
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/vota/!svn/ver/3/web/.htaccess
+END
+backend_dev.php
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/vota/!svn/ver/15/web/backend_dev.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/vota/!svn/ver/3/web/index.php
+END
+backend.php
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/vota/!svn/ver/12/web/backend.php
+END
+favicon.ico
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/vota/!svn/ver/3/web/favicon.ico
+END
